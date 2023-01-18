@@ -1,3 +1,12 @@
+/*
+Theme name:Danki
+Theme URI:https://cursos.dankicode.com
+Author:Raul christian
+Author URI: Raul christian
+Description: Tema para o curso de wp da danki code
+Version:1.0
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -236,11 +245,216 @@ li.slick-active button{
     max-width: 700px;
 }
 
+/*SECTION DEPOIMENTOS*/
+
+.depoimentos-single{
+    width:100%; 
+    display: inline-block;
+}
+.depoimentos-single p{
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;
+    padding: 0 20%;
+}
+section.depoimentos{
+    padding: 100px 0;
+    background-color: #23188f;
+    padding-bottom: 300px;
+}
+
+section.depoimentos h2{
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+}
+.depoimentos-box{
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.depoimentos-single img{
+    width: 70px;
+    height: 70px;
+    display:block;
+    overflow: hidden;
+    margin: 10px auto;
+    border-radius: 50%;
+
+}
+
+/*SESSÃO METODOLOGIA*/
+section.metodologia{
+    margin-left:15%;
+    width: 70%;
+    background: white;
+    box-shadow:0 10px 25px 0 rgba(37,15,139,0.4) ;;
+
+}
+section.metodologia >.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -15%;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.chamada-titulo{
+    padding-top: 80px;
+}
+.chamada-texto p{
+    padding-top:20px;
+    color: #8a8888;
+}
+.chamada-botao{
+    margin-top: 30px;
+}
+.chamada-botao a{
+    text-decoration: none;
+    color: #1b49a5;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background: #ffca00;
+    box-shadow: 0 20px 30px 0 rgba(37,15,138,0.2);
+
+}
+/*FIM DA ESTILIZAÇÃO METODOLOGIA*/
+
+/*INICIO DA ESTILIZAÇÃO FOOOTER*/
+.footer{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.rodape a{
+    text-decoration: none;
+    color: #8a8888;
+}
+
+/*ESTILIZAÇÃO DA PAGINA SOBRE*/
+.time-chamada{
+    width: 30%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+.apresentacao-titulo{
+    font-size: 35px;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+
+.apresentacao-time{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*ESTILIZAÇAO DA FOTO EQUIPE PAGINA SOBRE*/
+.foto-equipe{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10%;
+
+}
+
+.foto-equipe img{
+    width:85%;
+}
 
 
 
 
-@media screen and (max-width:952px) {
+/*ESTILIZAÇÃO DA PAGINA CONTATO */
+
+.contato-empresa{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 200px;
+
+}
+.contato-empresa h2{
+    padding-bottom: 20px;
+}
+
+.contato-empresa a{
+text-decoration: none;
+color: #8a8888;
+}
+
+.mapa-container{
+width: 400px;
+height: 250px;
+color: black;
+border-radius: 5px;
+}
+
+.contato-formulario input[type=text]{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding-left: 2%;
+    box-shadow:  0 2px 4px 0 rgba(92,99,110,0.1);
+
+}
+.contato-formulario select{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding-left: 2%;
+    box-shadow:  0 2px 4px 0 rgba(92,99,110,0.1);
+}
+.contato-formulario textarea{
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow:  0 2px 4px 0 rgba(92,99,110,0.1);
+
+}
+.contato-formulario input[type=submit]{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #050505;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background: #156FB7;
+    box-shadow: 0 20px 30px 0 rgba(37,15,138,0.2);
+    margin-top: 50px;
+
+}
+
+
+
+/*FIM DA ESTILIZAÇÃO DA PAGINA CONTATO*/
+
+
+
+@media screen and (max-width:952px){
     .menu-desktop{display: none;}
     .menu-mobile{display: block;}
     
@@ -262,16 +476,11 @@ li.slick-active button{
     .center{
         width: 80%;
     }
-    .slick-dotted{
-        margin:0 35%;
-     }
-    }
+
     .slider-container img{
        padding:0 40px !important;
     }
-    .slick-dotted li button{
-        display: none;
-    }
+    
     .sobre-time{
         margin-top: 40px;
     }
@@ -280,6 +489,7 @@ li.slick-active button{
         flex-direction: column;
         align-items: center;
     }
+}
     @media screen and (max-width:915px) {
         .services-modules{
            flex-direction: column ;
@@ -289,6 +499,51 @@ li.slick-active button{
             margin: 60px;
         }
     }
+    @media screen and (max-width:850px) {
+    .apresentacao-time{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .time-chamada{
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    }
+    @media screen and (max-width:800px) {
+        .rodape{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .rodape > div{
+            margin-bottom: 60px;
+        }
+
+        .apresentacao-titulo{
+            text-align: center;
+        }
+        .apresentacao-time{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .time-chamada{
+            margin-left: 5%;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+    }
+
 @media screen and (max-width:580px){
    
     .logo{
@@ -302,8 +557,5 @@ li.slick-active button{
         width:70%;
 
 }
-.slick-dotted{
-    margin: 0 0;
-    padding: 0 10px;
-}
+
 }

@@ -24,3 +24,22 @@ $(function(){
                 $('.menu-mobile').find('ul').slideToggle();
         })
 })
+
+
+/*INICIO SLIDE BAR DEPOIMENTOS*/
+$(function(){
+        $('section.depoimentos .depoimentos-box').slick({
+                dots:true,
+                arrows:false,
+                Infinite:true,
+                centerMode:true,
+                centerPadding:0,
+                speed:1000,
+                slideToShow:1,
+                autoplay:true,
+                autoplaySpeed:5000,
+                pauseOnHover:false
+                });
+         });
+ 
+ /*FIM SLIDE BAR DEPOIMENTOS*/
