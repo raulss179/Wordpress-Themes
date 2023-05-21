@@ -5,8 +5,8 @@
                 <div class="clear"></div><!--clear-->
             <div class="container-flex">
                 <div class="w50">
-                    <h2>Melhore a comunicação com seu cliente e time</h2>
-                    <p>Consultoria especializada em statups, empresas, principalmente, pessoas.</p>
+                    <h2><?php the_field('texto_clientes'); ?></h2>
+                    <p><?php the_field('texto_clientes2'); ?></p>
                     <a target="blank" href="https://dankicode.com">Ver demonstração</a>
                     </div><!--w50-->
                     <div class="w500"><img src="<?php echo get_theme_root_uri();?>/danki/image/home/pngs/ilustracao.png" alt="">
@@ -16,12 +16,11 @@
         </div><!--center-->
     </section><!--topo-->
     
-    <div class="circle"><i class="fa-solid fa-angle-down"></i></div><!--circle-->
     
+    <div class="circle"><i class="fa-solid fa-angle-down"></i></div><!--circle-->
 
-
-
-    <section class="clientes-slider">
+    
+<section class="clientes-slider">
        
         <div class="center">
         <div class="slider-container">
@@ -30,6 +29,7 @@
             <img src="<?php echo get_theme_root_uri();?>/danki/image/home/pngs/dominos.png" alt="">
             <img src="<?php echo get_theme_root_uri();?>/danki/image/home/pngs/uber.png" alt="">
             <img src="<?php echo get_theme_root_uri();?>/danki/image/home/pngs/walmart.png" alt="">
+            <img src= "<?php the_field('png_topo'); ?>">
         </div><!--center-->
         </div><!--slider-container-->
     </section><!--clientes-slider-->

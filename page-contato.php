@@ -10,8 +10,10 @@ get_header();
         <div class="contato-empresa">
             <div class="contato-localizacao">
                 <h2>A mais importante,<br>primeira conversa.</h2>
-                <a href="tel:+55 32 98490-5948">telefone: 32 98490-5948</a><br>
-                <a href="raulchristiansjdr@hotmail.com">e-mail: raulchristiansjdr@hotmail.com</a>
+                <?php
+                $pod = pods () ;
+                echo $pod -> display ( 'campo_empresa' ) ;   
+                ?>
                 <div class="mapa-container" id="map"></div>
             </div><!--contato-localização-->
 

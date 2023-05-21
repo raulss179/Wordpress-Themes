@@ -35,6 +35,7 @@ Version:1.0
     color: white;
     font-size: 15px;
     font-weight: bold;
+    line-height:1px;
 }
 .w50 a{
     text-decoration: none;
